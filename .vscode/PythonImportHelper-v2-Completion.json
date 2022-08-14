@@ -1,0 +1,647 @@
+[
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "django.db.models.deletion",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.db.models.deletion",
+        "description": "django.db.models.deletion",
+        "detail": "django.db.models.deletion",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "mod",
+        "importPath": "operator",
+        "description": "operator",
+        "isExtraImport": true,
+        "detail": "operator",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "index",
+        "importPath": "dashboard.views",
+        "description": "dashboard.views",
+        "isExtraImport": true,
+        "detail": "dashboard.views",
+        "documentation": {}
+    },
+    {
+        "label": "messages",
+        "importPath": "pyexpat.errors",
+        "description": "pyexpat.errors",
+        "isExtraImport": true,
+        "detail": "pyexpat.errors",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "messages",
+        "importPath": "django.contrib ",
+        "description": "django.contrib ",
+        "isExtraImport": true,
+        "detail": "django.contrib ",
+        "documentation": {}
+    },
+    {
+        "label": "generic",
+        "importPath": "django.views",
+        "description": "django.views",
+        "isExtraImport": true,
+        "detail": "django.views",
+        "documentation": {}
+    },
+    {
+        "label": "VideosSearch",
+        "importPath": "youtubesearchpython",
+        "description": "youtubesearchpython",
+        "isExtraImport": true,
+        "detail": "youtubesearchpython",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "get_asgi_application",
+        "importPath": "django.core.asgi",
+        "description": "django.core.asgi",
+        "isExtraImport": true,
+        "detail": "django.core.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "get_wsgi_application",
+        "importPath": "django.core.wsgi",
+        "description": "django.core.wsgi",
+        "isExtraImport": true,
+        "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "dashboard.migrations.0001_initial",
+        "description": "dashboard.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Notes',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
+        "detail": "dashboard.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "dashboard.migrations.0002_alter_notes_options_homework",
+        "description": "dashboard.migrations.0002_alter_notes_options_homework",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n        ('dashboard', '0001_initial'),\n    ]\n    operations = [\n        migrations.AlterModelOptions(\n            name='notes',\n            options={'verbose_name': 'notes', 'verbose_name_plural': 'notes'},\n        ),",
+        "detail": "dashboard.migrations.0002_alter_notes_options_homework",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "dashboard.migrations.0003_todo",
+        "description": "dashboard.migrations.0003_todo",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n        ('dashboard', '0002_alter_notes_options_homework'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Todo',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
+        "detail": "dashboard.migrations.0003_todo",
+        "documentation": {}
+    },
+    {
+        "label": "DashboardConfig",
+        "kind": 6,
+        "importPath": "dashboard.apps",
+        "description": "dashboard.apps",
+        "peekOfCode": "class DashboardConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'dashboard'",
+        "detail": "dashboard.apps",
+        "documentation": {}
+    },
+    {
+        "label": "NotesForm",
+        "kind": 6,
+        "importPath": "dashboard.forms",
+        "description": "dashboard.forms",
+        "peekOfCode": "class NotesForm(forms.ModelForm):\n    class Meta:\n        model=Notes\n        fields=['title','description']\nclass DateInput(forms.DateInput):\n    input_type='date'\nclass HomeworkForm(forms.ModelForm):\n    class Meta:\n        model=Homework\n        widgets={'due':DateInput()}",
+        "detail": "dashboard.forms",
+        "documentation": {}
+    },
+    {
+        "label": "DateInput",
+        "kind": 6,
+        "importPath": "dashboard.forms",
+        "description": "dashboard.forms",
+        "peekOfCode": "class DateInput(forms.DateInput):\n    input_type='date'\nclass HomeworkForm(forms.ModelForm):\n    class Meta:\n        model=Homework\n        widgets={'due':DateInput()}\n        fields=['subject','title','description','due','is_finished']\nclass DashboardForm(forms.Form):\n    text=forms.CharField(max_length=100,label=\"Enter your Search\")\nclass TodoForm(forms.ModelForm):",
+        "detail": "dashboard.forms",
+        "documentation": {}
+    },
+    {
+        "label": "HomeworkForm",
+        "kind": 6,
+        "importPath": "dashboard.forms",
+        "description": "dashboard.forms",
+        "peekOfCode": "class HomeworkForm(forms.ModelForm):\n    class Meta:\n        model=Homework\n        widgets={'due':DateInput()}\n        fields=['subject','title','description','due','is_finished']\nclass DashboardForm(forms.Form):\n    text=forms.CharField(max_length=100,label=\"Enter your Search\")\nclass TodoForm(forms.ModelForm):\n    class Meta:\n        model=Todo",
+        "detail": "dashboard.forms",
+        "documentation": {}
+    },
+    {
+        "label": "DashboardForm",
+        "kind": 6,
+        "importPath": "dashboard.forms",
+        "description": "dashboard.forms",
+        "peekOfCode": "class DashboardForm(forms.Form):\n    text=forms.CharField(max_length=100,label=\"Enter your Search\")\nclass TodoForm(forms.ModelForm):\n    class Meta:\n        model=Todo\n        fields=['title','is_finished']",
+        "detail": "dashboard.forms",
+        "documentation": {}
+    },
+    {
+        "label": "TodoForm",
+        "kind": 6,
+        "importPath": "dashboard.forms",
+        "description": "dashboard.forms",
+        "peekOfCode": "class TodoForm(forms.ModelForm):\n    class Meta:\n        model=Todo\n        fields=['title','is_finished']",
+        "detail": "dashboard.forms",
+        "documentation": {}
+    },
+    {
+        "label": "Notes",
+        "kind": 6,
+        "importPath": "dashboard.models",
+        "description": "dashboard.models",
+        "peekOfCode": "class Notes(models.Model):\n    user=models.ForeignKey(User,on_delete=models.CASCADE)\n    title=models.CharField(max_length=200)\n    description=models.TextField()\n    def __str__(self):\n        return self.title\n    class Meta:\n        verbose_name=\"notes\"\n        verbose_name_plural=\"notes\"\nclass Homework(models.Model):",
+        "detail": "dashboard.models",
+        "documentation": {}
+    },
+    {
+        "label": "Homework",
+        "kind": 6,
+        "importPath": "dashboard.models",
+        "description": "dashboard.models",
+        "peekOfCode": "class Homework(models.Model):\n    user=models.ForeignKey(User,on_delete=models.CASCADE)\n    subject=models.CharField(max_length=50)\n    title=models.CharField(max_length=100)\n    description=models.TextField()\n    due=models.DateTimeField()\n    is_finished=models.BooleanField(default=False)\n    def __str__(self):\n        return self.title\nclass Todo(models.Model):",
+        "detail": "dashboard.models",
+        "documentation": {}
+    },
+    {
+        "label": "Todo",
+        "kind": 6,
+        "importPath": "dashboard.models",
+        "description": "dashboard.models",
+        "peekOfCode": "class Todo(models.Model):\n    user= models.ForeignKey(User,on_delete=models.CASCADE)\n    title=models.CharField(max_length=100)\n    is_finished=models.BooleanField(default=False)\n    def __str__(self):\n        return self.title",
+        "detail": "dashboard.models",
+        "documentation": {}
+    },
+    {
+        "label": "NotesDetailView",
+        "kind": 6,
+        "importPath": "dashboard.views",
+        "description": "dashboard.views",
+        "peekOfCode": "class NotesDetailView(generic.DetailView):\n    model=Notes\ndef homework(request):\n    if request.method==\"POST\":\n        form=HomeworkForm(request.POST)\n        if form.is_valid():\n            try:\n                finished=request.POST['is_finished']\n                if finished == 'on':\n                    finished=True",
+        "detail": "dashboard.views",
+        "documentation": {}
+    },
+    {
+        "label": "index",
+        "kind": 2,
+        "importPath": "dashboard.views",
+        "description": "dashboard.views",
+        "peekOfCode": "def index(request):\n    return render(request,'dashboard/index.html')\ndef notes(request):\n    if request.method=='POST':\n        form=NotesForm(request.POST)\n        if form.is_valid():\n            notes=Notes(user=request.user,title=request.POST['title'],description=request.POST['description'])\n            notes.save()\n        messages.success(request,f\"Notes Added from {request.user.username} Successfully!\")\n    form=NotesForm()",
+        "detail": "dashboard.views",
+        "documentation": {}
+    },
+    {
+        "label": "notes",
+        "kind": 2,
+        "importPath": "dashboard.views",
+        "description": "dashboard.views",
+        "peekOfCode": "def notes(request):\n    if request.method=='POST':\n        form=NotesForm(request.POST)\n        if form.is_valid():\n            notes=Notes(user=request.user,title=request.POST['title'],description=request.POST['description'])\n            notes.save()\n        messages.success(request,f\"Notes Added from {request.user.username} Successfully!\")\n    form=NotesForm()\n    notes=Notes.objects.filter(user=request.user)\n    context={'notes':notes,'form':form}",
+        "detail": "dashboard.views",
+        "documentation": {}
+    },
+    {
+        "label": "delete_note",
+        "kind": 2,
+        "importPath": "dashboard.views",
+        "description": "dashboard.views",
+        "peekOfCode": "def delete_note(request,pk=None):\n    Notes.objects.get(id=pk).delete()\n    return redirect(\"notes\")\nclass NotesDetailView(generic.DetailView):\n    model=Notes\ndef homework(request):\n    if request.method==\"POST\":\n        form=HomeworkForm(request.POST)\n        if form.is_valid():\n            try:",
+        "detail": "dashboard.views",
+        "documentation": {}
+    },
+    {
+        "label": "homework",
+        "kind": 2,
+        "importPath": "dashboard.views",
+        "description": "dashboard.views",
+        "peekOfCode": "def homework(request):\n    if request.method==\"POST\":\n        form=HomeworkForm(request.POST)\n        if form.is_valid():\n            try:\n                finished=request.POST['is_finished']\n                if finished == 'on':\n                    finished=True\n                else:\n                    finished=False",
+        "detail": "dashboard.views",
+        "documentation": {}
+    },
+    {
+        "label": "update_homework",
+        "kind": 2,
+        "importPath": "dashboard.views",
+        "description": "dashboard.views",
+        "peekOfCode": "def update_homework(request,pk=None):\n    homework=Homework.objects.get(id=pk)\n    if homework.is_finished==True:\n        homework.is_finished=False\n    else:\n        homework.is_finished=True \n    homework.save()\n    return redirect('homework')\ndef delete_homework(request,pk=None):\n    Homework.objects.get(id=pk).delete()",
+        "detail": "dashboard.views",
+        "documentation": {}
+    },
+    {
+        "label": "delete_homework",
+        "kind": 2,
+        "importPath": "dashboard.views",
+        "description": "dashboard.views",
+        "peekOfCode": "def delete_homework(request,pk=None):\n    Homework.objects.get(id=pk).delete()\n    return redirect(\"homework\")\ndef youtube(request):\n    if request.method==\"POST\":\n        form=DashboardForm(request.POST)\n        text=request.POST['text']\n        video=VideosSearch(text,limit=10)\n        result_list=[]\n        for i in video.result()['result']:",
+        "detail": "dashboard.views",
+        "documentation": {}
+    },
+    {
+        "label": "youtube",
+        "kind": 2,
+        "importPath": "dashboard.views",
+        "description": "dashboard.views",
+        "peekOfCode": "def youtube(request):\n    if request.method==\"POST\":\n        form=DashboardForm(request.POST)\n        text=request.POST['text']\n        video=VideosSearch(text,limit=10)\n        result_list=[]\n        for i in video.result()['result']:\n            result_dict={\n                'input':text,\n                'title':i['title'],",
+        "detail": "dashboard.views",
+        "documentation": {}
+    },
+    {
+        "label": "todo",
+        "kind": 2,
+        "importPath": "dashboard.views",
+        "description": "dashboard.views",
+        "peekOfCode": "def todo(request):\n    form=TodoForm()\n    todo=Todo.objects.filter(user=request.user)\n    context={\n        'todos':todo,\n        'form':form\n    }\n    return render(request,\"dashboard/todo.html\",context)\n# stopped at 2:13:54",
+        "detail": "dashboard.views",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "studentstudyportal.asgi",
+        "description": "studentstudyportal.asgi",
+        "peekOfCode": "application = get_asgi_application()",
+        "detail": "studentstudyportal.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "studentstudyportal.settings",
+        "description": "studentstudyportal.settings",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-bku)a)g%0l^0^fv2x&wjcu#m_6*6z8&=8$2xz75)v1_i4h1dj8'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [",
+        "detail": "studentstudyportal.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "studentstudyportal.settings",
+        "description": "studentstudyportal.settings",
+        "peekOfCode": "SECRET_KEY = 'django-insecure-bku)a)g%0l^0^fv2x&wjcu#m_6*6z8&=8$2xz75)v1_i4h1dj8'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
+        "detail": "studentstudyportal.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEBUG",
+        "kind": 5,
+        "importPath": "studentstudyportal.settings",
+        "description": "studentstudyportal.settings",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
+        "detail": "studentstudyportal.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ALLOWED_HOSTS",
+        "kind": 5,
+        "importPath": "studentstudyportal.settings",
+        "description": "studentstudyportal.settings",
+        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'dashboard',",
+        "detail": "studentstudyportal.settings",
+        "documentation": {}
+    },
+    {
+        "label": "INSTALLED_APPS",
+        "kind": 5,
+        "importPath": "studentstudyportal.settings",
+        "description": "studentstudyportal.settings",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'dashboard',\n    'crispy_forms'\n]",
+        "detail": "studentstudyportal.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MIDDLEWARE",
+        "kind": 5,
+        "importPath": "studentstudyportal.settings",
+        "description": "studentstudyportal.settings",
+        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n]\nROOT_URLCONF = 'studentstudyportal.urls'",
+        "detail": "studentstudyportal.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ROOT_URLCONF",
+        "kind": 5,
+        "importPath": "studentstudyportal.settings",
+        "description": "studentstudyportal.settings",
+        "peekOfCode": "ROOT_URLCONF = 'studentstudyportal.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',",
+        "detail": "studentstudyportal.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TEMPLATES",
+        "kind": 5,
+        "importPath": "studentstudyportal.settings",
+        "description": "studentstudyportal.settings",
+        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
+        "detail": "studentstudyportal.settings",
+        "documentation": {}
+    },
+    {
+        "label": "WSGI_APPLICATION",
+        "kind": 5,
+        "importPath": "studentstudyportal.settings",
+        "description": "studentstudyportal.settings",
+        "peekOfCode": "WSGI_APPLICATION = 'studentstudyportal.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/4.0/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation",
+        "detail": "studentstudyportal.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASES",
+        "kind": 5,
+        "importPath": "studentstudyportal.settings",
+        "description": "studentstudyportal.settings",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation\n# https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    {",
+        "detail": "studentstudyportal.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_PASSWORD_VALIDATORS",
+        "kind": 5,
+        "importPath": "studentstudyportal.settings",
+        "description": "studentstudyportal.settings",
+        "peekOfCode": "AUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',\n    },",
+        "detail": "studentstudyportal.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LANGUAGE_CODE",
+        "kind": 5,
+        "importPath": "studentstudyportal.settings",
+        "description": "studentstudyportal.settings",
+        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.0/howto/static-files/\nSTATIC_URL = 'static/'\nSTATICFILES_DIRS=[BASE_DIR,'studentstudyportal/static']\nCRISPY_TEMPLATE_PACK=\"bootstrap4\"\n# Default primary key field type",
+        "detail": "studentstudyportal.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TIME_ZONE",
+        "kind": 5,
+        "importPath": "studentstudyportal.settings",
+        "description": "studentstudyportal.settings",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.0/howto/static-files/\nSTATIC_URL = 'static/'\nSTATICFILES_DIRS=[BASE_DIR,'studentstudyportal/static']\nCRISPY_TEMPLATE_PACK=\"bootstrap4\"\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field",
+        "detail": "studentstudyportal.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_I18N",
+        "kind": 5,
+        "importPath": "studentstudyportal.settings",
+        "description": "studentstudyportal.settings",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.0/howto/static-files/\nSTATIC_URL = 'static/'\nSTATICFILES_DIRS=[BASE_DIR,'studentstudyportal/static']\nCRISPY_TEMPLATE_PACK=\"bootstrap4\"\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "studentstudyportal.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_TZ",
+        "kind": 5,
+        "importPath": "studentstudyportal.settings",
+        "description": "studentstudyportal.settings",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.0/howto/static-files/\nSTATIC_URL = 'static/'\nSTATICFILES_DIRS=[BASE_DIR,'studentstudyportal/static']\nCRISPY_TEMPLATE_PACK=\"bootstrap4\"\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "studentstudyportal.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_URL",
+        "kind": 5,
+        "importPath": "studentstudyportal.settings",
+        "description": "studentstudyportal.settings",
+        "peekOfCode": "STATIC_URL = 'static/'\nSTATICFILES_DIRS=[BASE_DIR,'studentstudyportal/static']\nCRISPY_TEMPLATE_PACK=\"bootstrap4\"\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "studentstudyportal.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_AUTO_FIELD",
+        "kind": 5,
+        "importPath": "studentstudyportal.settings",
+        "description": "studentstudyportal.settings",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "studentstudyportal.settings",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "studentstudyportal.urls",
+        "description": "studentstudyportal.urls",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('',include('dashboard.urls'))\n]",
+        "detail": "studentstudyportal.urls",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "studentstudyportal.wsgi",
+        "description": "studentstudyportal.wsgi",
+        "peekOfCode": "application = get_wsgi_application()",
+        "detail": "studentstudyportal.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "manage",
+        "description": "manage",
+        "peekOfCode": "def main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'studentstudyportal.settings')\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"",
+        "detail": "manage",
+        "documentation": {}
+    }
+]
