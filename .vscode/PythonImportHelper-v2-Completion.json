@@ -451,7 +451,7 @@
         "kind": 2,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "def todo(request):\n    form=TodoForm()\n    todo=Todo.objects.filter(user=request.user)\n    context={\n        'todos':todo,\n        'form':form\n    }\n    return render(request,\"dashboard/todo.html\",context)\n# stopped at 2:13:54",
+        "peekOfCode": "def todo(request):\n    if request.method=='POST':\n        form=TodoForm(request.POST)\n        if form.is_valid():\n            try:\n                finished=request.POST['is_finished']\n                if finished=='on':\n                    finished=True\n                else:\n                    finished=False",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -541,7 +541,7 @@
         "kind": 5,
         "importPath": "studentstudyportal.settings",
         "description": "studentstudyportal.settings",
-        "peekOfCode": "WSGI_APPLICATION = 'studentstudyportal.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/4.0/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation",
+        "peekOfCode": "WSGI_APPLICATION = 'studentstudyportal.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/4.0/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.postgresql_psycopg2',\n        'NAME':'d2m1bcvhpji35l',\n        'USER':'qccunzwbaqsneu',\n        'PASSWORD':'04e52f7ef263438e3bf16f9e1f7d0aaa3815d88da154ff521ef1769d8eb69234',\n        'HOST':'ec2-34-234-240-121.compute-1.amazonaws.com',",
         "detail": "studentstudyportal.settings",
         "documentation": {}
     },
@@ -550,7 +550,7 @@
         "kind": 5,
         "importPath": "studentstudyportal.settings",
         "description": "studentstudyportal.settings",
-        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation\n# https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    {",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.postgresql_psycopg2',\n        'NAME':'d2m1bcvhpji35l',\n        'USER':'qccunzwbaqsneu',\n        'PASSWORD':'04e52f7ef263438e3bf16f9e1f7d0aaa3815d88da154ff521ef1769d8eb69234',\n        'HOST':'ec2-34-234-240-121.compute-1.amazonaws.com',\n        'PORT':'5432'\n    }\n}",
         "detail": "studentstudyportal.settings",
         "documentation": {}
     },
@@ -568,7 +568,7 @@
         "kind": 5,
         "importPath": "studentstudyportal.settings",
         "description": "studentstudyportal.settings",
-        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.0/howto/static-files/\nSTATIC_URL = 'static/'\nSTATIC_ROOT=os.path.join(PROJECT_ROOT,'studentstudyportal/static')\nCRISPY_TEMPLATE_PACK=\"bootstrap4\"\n# Default primary key field type",
+        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.0/howto/static-files/\nSTATIC_URL = 'static/'\nSTATIC_ROOT=os.path.join(BASE_DIR,'staticfiles')\nCRISPY_TEMPLATE_PACK=\"bootstrap4\"\n# Default primary key field type",
         "detail": "studentstudyportal.settings",
         "documentation": {}
     },
@@ -577,7 +577,7 @@
         "kind": 5,
         "importPath": "studentstudyportal.settings",
         "description": "studentstudyportal.settings",
-        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.0/howto/static-files/\nSTATIC_URL = 'static/'\nSTATIC_ROOT=os.path.join(PROJECT_ROOT,'studentstudyportal/static')\nCRISPY_TEMPLATE_PACK=\"bootstrap4\"\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.0/howto/static-files/\nSTATIC_URL = 'static/'\nSTATIC_ROOT=os.path.join(BASE_DIR,'staticfiles')\nCRISPY_TEMPLATE_PACK=\"bootstrap4\"\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field",
         "detail": "studentstudyportal.settings",
         "documentation": {}
     },
@@ -586,7 +586,7 @@
         "kind": 5,
         "importPath": "studentstudyportal.settings",
         "description": "studentstudyportal.settings",
-        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.0/howto/static-files/\nSTATIC_URL = 'static/'\nSTATIC_ROOT=os.path.join(PROJECT_ROOT,'studentstudyportal/static')\nCRISPY_TEMPLATE_PACK=\"bootstrap4\"\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.0/howto/static-files/\nSTATIC_URL = 'static/'\nSTATIC_ROOT=os.path.join(BASE_DIR,'staticfiles')\nCRISPY_TEMPLATE_PACK=\"bootstrap4\"\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
         "detail": "studentstudyportal.settings",
         "documentation": {}
     },
@@ -595,7 +595,7 @@
         "kind": 5,
         "importPath": "studentstudyportal.settings",
         "description": "studentstudyportal.settings",
-        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.0/howto/static-files/\nSTATIC_URL = 'static/'\nSTATIC_ROOT=os.path.join(PROJECT_ROOT,'studentstudyportal/static')\nCRISPY_TEMPLATE_PACK=\"bootstrap4\"\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.0/howto/static-files/\nSTATIC_URL = 'static/'\nSTATIC_ROOT=os.path.join(BASE_DIR,'staticfiles')\nCRISPY_TEMPLATE_PACK=\"bootstrap4\"\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
         "detail": "studentstudyportal.settings",
         "documentation": {}
     },
@@ -604,7 +604,7 @@
         "kind": 5,
         "importPath": "studentstudyportal.settings",
         "description": "studentstudyportal.settings",
-        "peekOfCode": "STATIC_URL = 'static/'\nSTATIC_ROOT=os.path.join(PROJECT_ROOT,'studentstudyportal/static')\nCRISPY_TEMPLATE_PACK=\"bootstrap4\"\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "STATIC_URL = 'static/'\nSTATIC_ROOT=os.path.join(BASE_DIR,'staticfiles')\nCRISPY_TEMPLATE_PACK=\"bootstrap4\"\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
         "detail": "studentstudyportal.settings",
         "documentation": {}
     },
