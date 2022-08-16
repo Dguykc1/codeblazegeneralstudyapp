@@ -469,7 +469,7 @@
         "kind": 5,
         "importPath": "studentstudyportal.settings",
         "description": "studentstudyportal.settings",
-        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\nPROJECT_ROOT=os.path.dirname(os.path.abspath(__file__))\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-bku)a)g%0l^0^fv2x&wjcu#m_6*6z8&=8$2xz75)v1_i4h1dj8'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = ['codeblazestudyapp.herokuapp.com','localhost']\n# Application definition",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\nPROJECT_ROOT=os.path.dirname(os.path.abspath(__file__))\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-bku)a)g%0l^0^fv2x&wjcu#m_6*6z8&=8$2xz75)v1_i4h1dj8'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = False\nALLOWED_HOSTS = ['codeblazestudyapp.herokuapp.com','localhost']\n# Application definition",
         "detail": "studentstudyportal.settings",
         "documentation": {}
     },
@@ -478,7 +478,7 @@
         "kind": 5,
         "importPath": "studentstudyportal.settings",
         "description": "studentstudyportal.settings",
-        "peekOfCode": "SECRET_KEY = 'django-insecure-bku)a)g%0l^0^fv2x&wjcu#m_6*6z8&=8$2xz75)v1_i4h1dj8'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = ['codeblazestudyapp.herokuapp.com','localhost']\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
+        "peekOfCode": "SECRET_KEY = 'django-insecure-bku)a)g%0l^0^fv2x&wjcu#m_6*6z8&=8$2xz75)v1_i4h1dj8'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = False\nALLOWED_HOSTS = ['codeblazestudyapp.herokuapp.com','localhost']\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
         "detail": "studentstudyportal.settings",
         "documentation": {}
     },
@@ -487,7 +487,7 @@
         "kind": 5,
         "importPath": "studentstudyportal.settings",
         "description": "studentstudyportal.settings",
-        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = ['codeblazestudyapp.herokuapp.com','localhost']\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
+        "peekOfCode": "DEBUG = False\nALLOWED_HOSTS = ['codeblazestudyapp.herokuapp.com','localhost']\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
         "detail": "studentstudyportal.settings",
         "documentation": {}
     },
