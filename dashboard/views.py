@@ -117,14 +117,27 @@ def todo(request):
                 else:
                     finished=False
             except:
-                pass
-
-    form=TodoForm()
-    todo=Todo.objects.filter(user=request.user)
-    context={
+                finished=False
+            todos=Todo(
+                user=request.user,
+                title=request.POST['title'],
+                is_finished=finished
+                )
+            todos.save()
+            messages.success(request,f"Todo Added from {request.user.username}!!")
+        else:
+            form=TodoForm()
+        todo=Todo.objects.filter(user=request.user)
+        if len(todo)==0:
+            todos_done= True
+        else:
+            todos_done=False
+    else:
+        context={
         'todos':todo,
-        'form':form
-    }
-    return render(request,"dashboard/todo.html",context)
+        'form':form,
+        'todos_done':todos_done
+        }
+        return render(request,"dashboard/todo.html",context)
 # stopped at 2:15:18
 
