@@ -127,3 +127,4 @@ def todo(request):
     }
     return render(request,"dashboard/todo.html",context)
 # stopped at 2:15:18
+
