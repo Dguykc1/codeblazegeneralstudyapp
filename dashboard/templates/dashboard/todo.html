@@ -20,12 +20,12 @@
                 <th scope="row">{{forloop.counter}}</th>
                 <td>{{todo.title}}</td>
                 <td>
-                    <a href="#">
+                    <a href="{% url 'update-todo' todo.id %}">
                         <div class="form-check">
                             {% if todo.is_finished == True %}  
                             <input class="form-check-input" type="checkbox" value="" checked>
                             {% else %}
-                            <input class="form-check-input" type="checkbox" value="" checked>
+                            <input class="form-check-input" type="checkbox" value="">
                             {% endif %}
                             <label class="form-check-label text-light" for="flexCheckDefault">
                                 Mark as Completed
@@ -34,7 +34,7 @@
                     </a>
                 </td>
 
-                <td><a href="#"><i class="fa fa-trash fa-2x"></i></a></td>
+                <td><a href="{% url 'delete-todo' todo.id %}"><i class="fa fa-trash fa-2x"></i></a></td>
             </tr>
             {% endfor %}
         </tbody>
@@ -45,6 +45,7 @@
 </div><br><br>
 <div class="container">
     <form method="POST">
+        {% csrf_token %}
         <fieldset class="form-group">
             <legend class="border-bottom mb-4">Create Todo</legend>
             {{form|crispy}}

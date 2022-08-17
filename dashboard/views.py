@@ -4,6 +4,8 @@ from django.contrib  import messages
 from . forms import *
 from django.views import generic
 from youtubesearchpython import VideosSearch
+import requests
+import wikipedia
 # Create your views here.
 
 
@@ -75,7 +77,7 @@ def youtube(request):
     if request.method=="POST":
         form=DashboardForm(request.POST)
         text=request.POST['text']
-        video=VideosSearch(text,limit=10)
+        video=VideosSearch(text,limit=20)
         result_list=[]
         for i in video.result()['result']:
             result_dict={
@@ -125,19 +127,123 @@ def todo(request):
                 )
             todos.save()
             messages.success(request,f"Todo Added from {request.user.username}!!")
-        else:
-            form=TodoForm()
-        todo=Todo.objects.filter(user=request.user)
-        if len(todo)==0:
-            todos_done= True
-        else:
-            todos_done=False
     else:
+        form=TodoForm()
+    todo=Todo.objects.filter(user=request.user)
+    if len(todo)==0:
+        todos_done= True
+    else:
+        todos_done=False
+    context={
+            'todos':todo,
+            'form':form,'todos_done':todos_done}
+    return render(request,"dashboard/todo.html",context)
+
+def update_todo(request,pk=None):
+    todo=Todo.objects.get(id=pk)
+    if todo.is_finished == True:
+        todo.is_finished = False
+    else:
+        todo.is_finished = True
+    todo.save()
+    return redirect("todo")
+
+
+def delete_todo(request,pk=None):
+    Todo.objects.get(id=pk).delete()
+    return redirect("todo")
+
+# def books(request):
+#     form=DashboardForm()
+#     context={'form':form}
+#     return render(request,"dashboard/books.html",context)
+
+
+def books(request):
+    if request.method=="POST":
+        form=DashboardForm(request.POST)
+        text=request.POST['text']
+        url= "https://www.googleapis.com/books/v1/volumes?q="+text
+        r=requests.get(url)
+        answer=r.json()
+        result_list=[]
+        for i in range(10):
+            result_dict={
+                'title':answer['items'][i]['volumeInfo']['title'],
+                'subtitle':answer['items'][i]['volumeInfo'].get('subtitle'),
+                'description':answer['items'][i]['volumeInfo'].get('description'),
+                'count':answer['items'][i]['volumeInfo'].get('pageCount'),
+                'categories':answer['items'][i]['volumeInfo'].get('categories'),
+                'rating':answer['items'][i]['volumeInfo'].get('pageRating'),
+                'thumbnail':answer['items'][i]['volumeInfo'].get('imageLinks').get('thumbnail'),
+                'preview':answer['items'][i]['volumeInfo'].get('previewLink')
+
+            }
+            result_list.append(result_dict)
+            context={
+               'form':form,
+               'results':result_list 
+            }  
+        return render(request,'dashboard/books.html',context) 
+    else:
+        form=DashboardForm
+    form= DashboardForm()
+    context={'form':form}
+    return render(request,'dashboard/books.html',context)
+    
+
+def dictionary(request):
+    if request.method=="POST":
+        form=DashboardForm(request.POST)
+        text=request.POST['text']
+        url= "https://api.dictionaryapi.dev/api/v2/entries/en/"+text
+        r=requests.get(url)
+        answer=r.json()
+        try:
+            phonetics=answer[0]['phonetics'][0]['text']
+            audio=answer[0]['phonetics'][0]['audio']
+            definition=answer[0]['meanings'][0]['definitions'][0]['definition']
+            example=answer[0]['meanings'][0]['definitions'][0]['example']
+            synonyms=answer[0]['meanings'][0]['definitions'][0]['synonyms']
+            context={
+                'form':form,
+                'input':text,
+                'phonetics':phonetics,
+                'audio':audio,
+                'definition':definition,
+                'example':example,
+                'synonyms':synonyms
+            }
+        except:
+            context={
+               'form':form,
+               'input':'' 
+            }
+        return render(request,"dashboard/dictionary.html",context)
+    else:
+
+        form=DashboardForm()
+        context={'form':form}
+    return render(request,"dashboard/dictionary.html",context)
+
+def wiki(request):
+    if request.method == 'POST':
+        text=request.POST['text']
+        form=DashboardForm(request.POST)
+        search=wikipedia.page(text)
         context={
-        'todos':todo,
-        'form':form,
-        'todos_done':todos_done
+            'form':form,
+            'title':search.title,
+            'link':search.url,
+            'details':search.summary
         }
-        return render(request,"dashboard/todo.html",context)
-# stopped at 2:15:18
+        return render(request,"dashboard/wiki.html",context)
+    else:
+        form=DashboardForm()
+        context={
+        'form':form
+    }
+    return render(request,'dashboard/wiki.html',context)
+
+# stopped at 3:08:35
 

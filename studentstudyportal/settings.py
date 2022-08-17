@@ -24,7 +24,7 @@ PROJECT_ROOT=os.path.dirname(os.path.abspath(__file__))
 SECRET_KEY = 'django-insecure-bku)a)g%0l^0^fv2x&wjcu#m_6*6z8&=8$2xz75)v1_i4h1dj8'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['codeblazestudyapp.herokuapp.com','localhost']
 
