@@ -196,9 +196,6 @@ margin-top: 1rem;
     main{
         margin-top: 2rem;
     }
-    body{
-        height: 800vh;
-    }
     .navbar .menu li a {
         display: inline-block;
         margin: 20px 0;
