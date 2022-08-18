@@ -24,7 +24,9 @@ PROJECT_ROOT=os.path.dirname(os.path.abspath(__file__))
 SECRET_KEY = 'django-insecure-bku)a)g%0l^0^fv2x&wjcu#m_6*6z8&=8$2xz75)v1_i4h1dj8'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
+
+
 
 ALLOWED_HOSTS = ['codeblazestudyapp.herokuapp.com','localhost']
 
@@ -131,7 +133,8 @@ STATIC_URL = 'static/'
 
 STATIC_ROOT=os.path.join(BASE_DIR,'staticfiles')
 CRISPY_TEMPLATE_PACK="bootstrap4"
-
+LOGIN_REDIRECT_URL='index'
+LOGIN_URL='login'
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 

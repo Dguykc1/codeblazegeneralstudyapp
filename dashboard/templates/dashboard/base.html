@@ -14,55 +14,65 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
   <link rel="stylesheet" href="{% static 'css/main.css' %}" />
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 
 <body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <script src="{% static 'js/fontawesome.min.js' %}"></script>
+  <script src="{% static 'js/script.js' %}"></script>
+  <script src="{% static 'js/jq.js' %}"></script>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Student Study Portal</a>        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-          <ul class="navbar-nav mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/">Home</a>
+    <nav>
+      <div>
+        <div class="navbar">
+          <div class="logo">
+            <a  href="{% url 'index' %}">Student Study Portal</a> 
+          </div>
+          <ul class="menu">
+            <li>
+              <a class="active" href="{% url 'index' %}">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Profile</a>
+            {% if user.is_authenticated %}
+            <li>
+              <a class="nav-link" href="{% url 'profile' %}">Profile</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                Options
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Books</a>
-                <a class="dropdown-item" href="#">Wikipedia</a>
-                <div class="dropdown-divider"></div>
-
-                <a class="dropdown-item" href="#">Dictionary</a>
-                <a class="dropdown-item" href="youtube">Youtube</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">To-do</a>
-                <a class="dropdown-item" href="homework">Homework</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="notes">Notes</a>
-                <a class="dropdown-item" href="#">Conversion</a>
-                <div class="dropdown-divider"></div>
-              </div>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#">Logout</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Register</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Login</a>
-            </li>
+            <li><a href="{% url 'books' %}">Books</a></li>
+                <li><a href="{% url 'wiki' %}">Wikipedia</a></li>
+                    <li><a  href="{% url 'dictionary' %}">Dictionary</a></li>
+                    <li><a  href="{% url 'youtube' %}">Youtube</a></li>
+                    <li><a  href="{% url 'todo' %}">To-do</a></li>
+                    <li><a href="{% url 'homework' %}">Homework</a></li>
+                    <li> <a class="dropdown-item" href="{% url 'notes' %}">Notes</a></li>
+                   <li> <a href="{% url 'conversion' %}">Conversion</a></li>
+    
+                <li>
+                  <a  href="{% url 'logout' %}">Logout</a>
+                </li>
+              {% else %}
+                <li>
+                  <a  href="{% url 'register' %}">Register</a>
+                </li>
+                <li >
+                  <a href="{% url 'login' %}">Login</a>
+                </li>
+              {% endif %} 
+            
+                
+          </ul>
+          
+          <div class="menu-btn">
+            <i class="fas fa-bars">
+            </i>
+        </div>
+          di
+        </div>
           </ul>
         </div>
       </div>
@@ -79,13 +89,7 @@
     {% endblock content %}
 
   </main>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-  </script>
+  
 </body>
 
 </html>
