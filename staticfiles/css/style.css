@@ -18,6 +18,7 @@ html{
     background-color: #FF7F2A;
     position: fixed;
     z-index: 999;
+
     width: 100%;
     padding: 15px 0;
     transition: all 0.3s ease;
@@ -180,13 +181,14 @@ body{
         
         position: fixed;
         background: rgb(26, 23, 23);
-        
+        height: 300vh;
         width: 100%;
         left: -100%;
         top: 0;
         text-align: center;
         padding-top: 80px;
         transition: all 0.3s ease;
+        margin-bottom: 1rem;
     }
 main{
 margin-top: 1rem;
@@ -261,19 +263,6 @@ width: 100%;
         .services .serv-content .card{
             /* width: calc(50% - 10px); */
             margin-bottom: 20px;
-        }
-        .home {
-            display: flex;
-            background: url("/images/kcimage.JPG");
-            background-size: cover;
-            background-repeat: no-repeat;
-            height: 100vh;
-        
-        background-origin: content-box;
-            font-size: 2rem;
-            color: rgb(33, 93, 172);
-            min-height: 500px;
-            font-family: 'Ubuntu', sans-serif;
         }
 
     }
