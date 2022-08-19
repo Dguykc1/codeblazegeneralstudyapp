@@ -179,7 +179,7 @@ body{
     .navbar .menu {
         position: fixed;
         background: black;
-        height: 200vh;
+        height: 400vh;
         width: 100%;
         left: -100%;
         top: 0;

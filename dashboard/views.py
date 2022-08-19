@@ -75,7 +75,8 @@ def update_homework(request,pk=None):
 def delete_homework(request,pk=None):
     Homework.objects.get(id=pk).delete()
     return redirect("homework")
-@login_required
+
+
 def youtube(request):
     if request.method=="POST":
         form=DashboardForm(request.POST)
@@ -309,7 +310,7 @@ def conversion(request):
         }
     return render(request,"dashboard/conversion.html",context)
 
-@login_required
+
 def register(request):
     if request.method=='POST':
         form=UserRegistrationForm(request.POST)
