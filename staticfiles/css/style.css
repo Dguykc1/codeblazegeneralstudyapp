@@ -177,9 +177,10 @@ body{
             margin-bottom: 35px;
         }
     .navbar .menu {
+        
         position: fixed;
-        background: black;
-        height: 400vh;
+        background: rgb(26, 23, 23);
+        
         width: 100%;
         left: -100%;
         top: 0;
@@ -201,6 +202,7 @@ margin-top: 1rem;
         margin: 20px 0;
         font-size: 25px;
     }
+    
 
     .navbar .menu.active {
         left: 0;
@@ -208,6 +210,7 @@ margin-top: 1rem;
 
     .menu-btn i.active:before {
         content: "\f00d";
+        
     }
 
     .home .home-content .text-2 {
