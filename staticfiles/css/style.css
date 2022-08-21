@@ -140,7 +140,9 @@ body{
     margin-left: 25px;
     transition:color 0.3s ease;
 }
-
+header{
+    margin-bottom: 4rem;
+}
 @media(max-width:1300px) {
     .home .max-width {
         margin-left: 0px;
@@ -186,7 +188,7 @@ body{
         left: -100%;
         top: 0;
         text-align: center;
-        padding-top: 80px;
+        padding-top: 0px;
         transition: all 0.3s ease;
         margin-bottom: 1rem;
     }

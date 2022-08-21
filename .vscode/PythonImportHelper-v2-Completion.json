@@ -105,6 +105,14 @@
         "documentation": {}
     },
     {
+        "label": "EmailUserAdmin",
+        "importPath": "custom_user.admin",
+        "description": "custom_user.admin",
+        "isExtraImport": true,
+        "detail": "custom_user.admin",
+        "documentation": {}
+    },
+    {
         "label": "AppConfig",
         "importPath": "django.apps",
         "description": "django.apps",
@@ -121,15 +129,15 @@
         "documentation": {}
     },
     {
-        "label": "mod",
-        "importPath": "operator",
-        "description": "operator",
+        "label": "UserCreationForm",
+        "importPath": "django.contrib.auth.forms",
+        "description": "django.contrib.auth.forms",
         "isExtraImport": true,
-        "detail": "operator",
+        "detail": "django.contrib.auth.forms",
         "documentation": {}
     },
     {
-        "label": "User",
+        "label": "AbstractUser",
         "importPath": "django.contrib.auth.models",
         "description": "django.contrib.auth.models",
         "isExtraImport": true,
@@ -174,6 +182,14 @@
         "description": "dashboard.views",
         "isExtraImport": true,
         "detail": "dashboard.views",
+        "documentation": {}
+    },
+    {
+        "label": "log",
+        "importPath": "cmath",
+        "description": "cmath",
+        "isExtraImport": true,
+        "detail": "cmath",
         "documentation": {}
     },
     {
@@ -225,6 +241,32 @@
         "documentation": {}
     },
     {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "wikipedia",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "wikipedia",
+        "description": "wikipedia",
+        "detail": "wikipedia",
+        "documentation": {}
+    },
+    {
+        "label": "login_required",
+        "importPath": "django.contrib.auth.decorators",
+        "description": "django.contrib.auth.decorators",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.decorators",
+        "documentation": {}
+    },
+    {
         "label": "os",
         "kind": 6,
         "isExtraImport": true,
@@ -247,6 +289,22 @@
         "description": "pathlib",
         "isExtraImport": true,
         "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "views",
+        "importPath": "dashboard",
+        "description": "dashboard",
+        "isExtraImport": true,
+        "detail": "dashboard",
+        "documentation": {}
+    },
+    {
+        "label": "views",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
         "documentation": {}
     },
     {
@@ -294,6 +352,15 @@
         "documentation": {}
     },
     {
+        "label": "CodeblazeStudyAppUserAdmin",
+        "kind": 6,
+        "importPath": "dashboard.admin",
+        "description": "dashboard.admin",
+        "peekOfCode": "class CodeblazeStudyAppUserAdmin(EmailUserAdmin):\n    pass\nadmin.site.register(Notes)\nadmin.site.register(Homework)\nadmin.site.register(Todo)\nadmin.site.register(CodeBlazeStudyAppUser)",
+        "detail": "dashboard.admin",
+        "documentation": {}
+    },
+    {
         "label": "DashboardConfig",
         "kind": 6,
         "importPath": "dashboard.apps",
@@ -334,7 +401,7 @@
         "kind": 6,
         "importPath": "dashboard.forms",
         "description": "dashboard.forms",
-        "peekOfCode": "class DashboardForm(forms.Form):\n    text=forms.CharField(max_length=100,label=\"Enter your Search\")\nclass TodoForm(forms.ModelForm):\n    class Meta:\n        model=Todo\n        fields=['title','is_finished']",
+        "peekOfCode": "class DashboardForm(forms.Form):\n    text=forms.CharField(max_length=100,label=\"Enter your Search\")\nclass TodoForm(forms.ModelForm):\n    class Meta:\n        model=Todo\n        fields=['title','is_finished']\nclass ConversionForm(forms.Form):\n    CHOICES=[('length','Length'),('mass','Mass')]\n    measurement=forms.ChoiceField(choices=CHOICES,widget=forms.RadioSelect)\nclass ConversionLengthForm(forms.Form):",
         "detail": "dashboard.forms",
         "documentation": {}
     },
@@ -343,8 +410,53 @@
         "kind": 6,
         "importPath": "dashboard.forms",
         "description": "dashboard.forms",
-        "peekOfCode": "class TodoForm(forms.ModelForm):\n    class Meta:\n        model=Todo\n        fields=['title','is_finished']",
+        "peekOfCode": "class TodoForm(forms.ModelForm):\n    class Meta:\n        model=Todo\n        fields=['title','is_finished']\nclass ConversionForm(forms.Form):\n    CHOICES=[('length','Length'),('mass','Mass')]\n    measurement=forms.ChoiceField(choices=CHOICES,widget=forms.RadioSelect)\nclass ConversionLengthForm(forms.Form):\n    CHOICES=[('yard','Yard'),('foot','Foot')]\n    input=forms.CharField(required=False,label=False,widget=forms.TextInput(",
         "detail": "dashboard.forms",
+        "documentation": {}
+    },
+    {
+        "label": "ConversionForm",
+        "kind": 6,
+        "importPath": "dashboard.forms",
+        "description": "dashboard.forms",
+        "peekOfCode": "class ConversionForm(forms.Form):\n    CHOICES=[('length','Length'),('mass','Mass')]\n    measurement=forms.ChoiceField(choices=CHOICES,widget=forms.RadioSelect)\nclass ConversionLengthForm(forms.Form):\n    CHOICES=[('yard','Yard'),('foot','Foot')]\n    input=forms.CharField(required=False,label=False,widget=forms.TextInput(\n        attrs={'type':'number','placeholder':'Enter the Number'}\n    ))\n    measure1=forms.CharField(\n        label='',widget=forms.Select(choices=CHOICES)",
+        "detail": "dashboard.forms",
+        "documentation": {}
+    },
+    {
+        "label": "ConversionLengthForm",
+        "kind": 6,
+        "importPath": "dashboard.forms",
+        "description": "dashboard.forms",
+        "peekOfCode": "class ConversionLengthForm(forms.Form):\n    CHOICES=[('yard','Yard'),('foot','Foot')]\n    input=forms.CharField(required=False,label=False,widget=forms.TextInput(\n        attrs={'type':'number','placeholder':'Enter the Number'}\n    ))\n    measure1=forms.CharField(\n        label='',widget=forms.Select(choices=CHOICES)\n    )\n    measure2=forms.CharField(\n        label='',widget=forms.Select(choices=CHOICES)",
+        "detail": "dashboard.forms",
+        "documentation": {}
+    },
+    {
+        "label": "ConversionMassForm",
+        "kind": 6,
+        "importPath": "dashboard.forms",
+        "description": "dashboard.forms",
+        "peekOfCode": "class ConversionMassForm(forms.Form):\n    CHOICES=[('pound','Pound'),('kilogram','Kilogram')]\n    input=forms.CharField(required=False,label=False,widget=forms.TextInput(\n        attrs={'type':'number','placeholder':'Enter the Number'}\n    ))\n    measure1=forms.CharField(\n        label='',widget=forms.Select(choices=CHOICES)\n    )\n    measure2=forms.CharField(\n        label='',widget=forms.Select(choices=CHOICES)",
+        "detail": "dashboard.forms",
+        "documentation": {}
+    },
+    {
+        "label": "UserRegistrationForm",
+        "kind": 6,
+        "importPath": "dashboard.forms",
+        "description": "dashboard.forms",
+        "peekOfCode": "class UserRegistrationForm(UserCreationForm):\n    first_name=forms.CharField()\n    last_name=forms.CharField()\n    email=forms.EmailField(required=True)\n    class Meta:\n        model=CodeBlazeStudyAppUser\n        fields=['first_name','last_name','email','password1','password2']\n        USERNAME_FIELD='email'",
+        "detail": "dashboard.forms",
+        "documentation": {}
+    },
+    {
+        "label": "CodeBlazeStudyAppUser",
+        "kind": 6,
+        "importPath": "dashboard.models",
+        "description": "dashboard.models",
+        "peekOfCode": "class CodeBlazeStudyAppUser(AbstractUser):\n    STATUS=(\n        ('regular','regular'),\n        ('subscriber','subscriber'),\n        ('moderator','moderator')\n    )\n    email=models.EmailField(unique=True)\n    status=models.CharField(max_length=100,choices=STATUS,default='regular')\n    description=models.TextField(\"Description\",max_length=600,default='',blank=True)\n    def __str__(self):",
+        "detail": "dashboard.models",
         "documentation": {}
     },
     {
@@ -379,7 +491,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class NotesDetailView(generic.DetailView):\n    model=Notes\ndef homework(request):\n    if request.method==\"POST\":\n        form=HomeworkForm(request.POST)\n        if form.is_valid():\n            try:\n                finished=request.POST['is_finished']\n                if finished == 'on':\n                    finished=True",
+        "peekOfCode": "class NotesDetailView(generic.DetailView):\n    model=Notes\n@login_required\ndef homework(request):\n    if request.method==\"POST\":\n        form=HomeworkForm(request.POST)\n        if form.is_valid():\n            try:\n                finished=request.POST['is_finished']\n                if finished == 'on':",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -388,7 +500,7 @@
         "kind": 2,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "def index(request):\n    return render(request,'dashboard/index.html')\ndef notes(request):\n    if request.method=='POST':\n        form=NotesForm(request.POST)\n        if form.is_valid():\n            notes=Notes(user=request.user,title=request.POST['title'],description=request.POST['description'])\n            notes.save()\n        messages.success(request,f\"Notes Added from {request.user.username} Successfully!\")\n    form=NotesForm()",
+        "peekOfCode": "def index(request):\n    return render(request,'dashboard/index.html')\n@login_required\ndef notes(request):\n    if request.method=='POST':\n        form=NotesForm(request.POST)\n        if form.is_valid():\n            notes=Notes(user=request.user,title=request.POST['title'],description=request.POST['description'])\n            notes.save()\n        messages.success(request,f\"Notes Added from {request.user.first_name} {request.user.last_name} Successfully!\")",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -397,7 +509,7 @@
         "kind": 2,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "def notes(request):\n    if request.method=='POST':\n        form=NotesForm(request.POST)\n        if form.is_valid():\n            notes=Notes(user=request.user,title=request.POST['title'],description=request.POST['description'])\n            notes.save()\n        messages.success(request,f\"Notes Added from {request.user.username} Successfully!\")\n    form=NotesForm()\n    notes=Notes.objects.filter(user=request.user)\n    context={'notes':notes,'form':form}",
+        "peekOfCode": "def notes(request):\n    if request.method=='POST':\n        form=NotesForm(request.POST)\n        if form.is_valid():\n            notes=Notes(user=request.user,title=request.POST['title'],description=request.POST['description'])\n            notes.save()\n        messages.success(request,f\"Notes Added from {request.user.first_name} {request.user.last_name} Successfully!\")\n    form=NotesForm()\n    notes=Notes.objects.filter(user=request.user)\n    context={'notes':notes,'form':form}",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -406,7 +518,7 @@
         "kind": 2,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "def delete_note(request,pk=None):\n    Notes.objects.get(id=pk).delete()\n    return redirect(\"notes\")\nclass NotesDetailView(generic.DetailView):\n    model=Notes\ndef homework(request):\n    if request.method==\"POST\":\n        form=HomeworkForm(request.POST)\n        if form.is_valid():\n            try:",
+        "peekOfCode": "def delete_note(request,pk=None):\n    Notes.objects.get(id=pk).delete()\n    return redirect(\"notes\")\nclass NotesDetailView(generic.DetailView):\n    model=Notes\n@login_required\ndef homework(request):\n    if request.method==\"POST\":\n        form=HomeworkForm(request.POST)\n        if form.is_valid():",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -424,7 +536,7 @@
         "kind": 2,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "def update_homework(request,pk=None):\n    homework=Homework.objects.get(id=pk)\n    if homework.is_finished==True:\n        homework.is_finished=False\n    else:\n        homework.is_finished=True \n    homework.save()\n    return redirect('homework')\ndef delete_homework(request,pk=None):\n    Homework.objects.get(id=pk).delete()",
+        "peekOfCode": "def update_homework(request,pk=None):\n    homework=Homework.objects.get(id=pk)\n    if homework.is_finished==True:\n        homework.is_finished=False\n    else:\n        homework.is_finished=True \n    homework.save()\n    return redirect('homework')\n@login_required\ndef delete_homework(request,pk=None):",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -433,7 +545,7 @@
         "kind": 2,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "def delete_homework(request,pk=None):\n    Homework.objects.get(id=pk).delete()\n    return redirect(\"homework\")\ndef youtube(request):\n    if request.method==\"POST\":\n        form=DashboardForm(request.POST)\n        text=request.POST['text']\n        video=VideosSearch(text,limit=10)\n        result_list=[]\n        for i in video.result()['result']:",
+        "peekOfCode": "def delete_homework(request,pk=None):\n    Homework.objects.get(id=pk).delete()\n    return redirect(\"homework\")\ndef youtube(request):\n    if request.method==\"POST\":\n        form=DashboardForm(request.POST)\n        text=request.POST['text']\n        video=VideosSearch(text,limit=20)\n        result_list=[]\n        for i in video.result()['result']:",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -442,7 +554,7 @@
         "kind": 2,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "def youtube(request):\n    if request.method==\"POST\":\n        form=DashboardForm(request.POST)\n        text=request.POST['text']\n        video=VideosSearch(text,limit=10)\n        result_list=[]\n        for i in video.result()['result']:\n            result_dict={\n                'input':text,\n                'title':i['title'],",
+        "peekOfCode": "def youtube(request):\n    if request.method==\"POST\":\n        form=DashboardForm(request.POST)\n        text=request.POST['text']\n        video=VideosSearch(text,limit=20)\n        result_list=[]\n        for i in video.result()['result']:\n            result_dict={\n                'input':text,\n                'title':i['title'],",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -460,7 +572,7 @@
         "kind": 2,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "def update_todo(request,pk=None):\n    todo=Todo.objects.get(id=pk)\n    if todo.is_finished == True:\n        todo.is_finished = False\n    else:\n        todo.is_finished = True\n    todo.save()\n    return redirect(\"todo\")\ndef delete_todo(request,pk=None):\n    Todo.objects.get(id=pk).delete()",
+        "peekOfCode": "def update_todo(request,pk=None):\n    todo=Todo.objects.get(id=pk)\n    if todo.is_finished == True:\n        todo.is_finished = False\n    else:\n        todo.is_finished = True\n    todo.save()\n    return redirect(\"todo\")\n@login_required\ndef delete_todo(request,pk=None):",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -469,7 +581,7 @@
         "kind": 2,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "def delete_todo(request,pk=None):\n    Todo.objects.get(id=pk).delete()\n    return redirect(\"todo\")\ndef books(request):\n    return render(request,\"dashboard/books.html\")\n# stopped at 2:27:49",
+        "peekOfCode": "def delete_todo(request,pk=None):\n    Todo.objects.get(id=pk).delete()\n    return redirect(\"todo\")\n# def books(request):\n#     form=DashboardForm()\n#     context={'form':form}\n#     return render(request,\"dashboard/books.html\",context)\n@login_required\ndef books(request):\n    if request.method==\"POST\":",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -478,7 +590,52 @@
         "kind": 2,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "def books(request):\n    return render(request,\"dashboard/books.html\")\n# stopped at 2:27:49",
+        "peekOfCode": "def books(request):\n    if request.method==\"POST\":\n        form=DashboardForm(request.POST)\n        text=request.POST['text']\n        url= \"https://www.googleapis.com/books/v1/volumes?q=\"+text\n        r=requests.get(url)\n        answer=r.json()\n        result_list=[]\n        for i in range(10):\n            result_dict={",
+        "detail": "dashboard.views",
+        "documentation": {}
+    },
+    {
+        "label": "dictionary",
+        "kind": 2,
+        "importPath": "dashboard.views",
+        "description": "dashboard.views",
+        "peekOfCode": "def dictionary(request):\n    if request.method==\"POST\":\n        form=DashboardForm(request.POST)\n        text=request.POST['text']\n        url= \"https://api.dictionaryapi.dev/api/v2/entries/en/\"+text\n        r=requests.get(url)\n        answer=r.json()\n        try:\n            phonetics=answer[0]['phonetics'][0]['text']\n            audio=answer[0]['phonetics'][0]['audio']",
+        "detail": "dashboard.views",
+        "documentation": {}
+    },
+    {
+        "label": "wiki",
+        "kind": 2,
+        "importPath": "dashboard.views",
+        "description": "dashboard.views",
+        "peekOfCode": "def wiki(request):\n    if request.method == 'POST':\n        text=request.POST['text']\n        form=DashboardForm(request.POST)\n        search=wikipedia.page(text)\n        context={\n            'form':form,\n            'title':search.title,\n            'link':search.url,\n            'details':search.summary",
+        "detail": "dashboard.views",
+        "documentation": {}
+    },
+    {
+        "label": "conversion",
+        "kind": 2,
+        "importPath": "dashboard.views",
+        "description": "dashboard.views",
+        "peekOfCode": "def conversion(request):\n    if request.method=='POST':\n        form=ConversionForm(request.POST)\n        if request.POST['measurement']=='length':\n            measurement_form=ConversionLengthForm()\n            context={\n                'form':form,\n                'm_form':measurement_form,\n                'input':True\n            }",
+        "detail": "dashboard.views",
+        "documentation": {}
+    },
+    {
+        "label": "register",
+        "kind": 2,
+        "importPath": "dashboard.views",
+        "description": "dashboard.views",
+        "peekOfCode": "def register(request):\n    if request.method=='POST':\n        form=UserRegistrationForm(request.POST)\n        if form.is_valid():\n            form.save()\n            username=form.cleaned_data.get('username')\n            messages.success(request,f\"Account Created for {username}!!\")\n            return redirect(\"login\")\n    else:\n        form=UserRegistrationForm()",
+        "detail": "dashboard.views",
+        "documentation": {}
+    },
+    {
+        "label": "profile",
+        "kind": 2,
+        "importPath": "dashboard.views",
+        "description": "dashboard.views",
+        "peekOfCode": "def profile(request):\n    homeworks=Homework.objects.filter(is_finished=False,user=request.user)\n    todos=Todo.objects.filter(is_finished=False,user=request.user)\n    if len(homeworks)==0:\n        homework_done=True\n    else:\n        homework_done=False\n    if len(todos)==0:\n        todos_done=True\n    else:",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -496,7 +653,7 @@
         "kind": 5,
         "importPath": "studentstudyportal.settings",
         "description": "studentstudyportal.settings",
-        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\nPROJECT_ROOT=os.path.dirname(os.path.abspath(__file__))\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-bku)a)g%0l^0^fv2x&wjcu#m_6*6z8&=8$2xz75)v1_i4h1dj8'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = ['codeblazestudyapp.herokuapp.com','localhost']\n# Application definition",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\nPROJECT_ROOT=os.path.dirname(os.path.abspath(__file__))\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-bku)a)g%0l^0^fv2x&wjcu#m_6*6z8&=8$2xz75)v1_i4h1dj8'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = False\nALLOWED_HOSTS = ['codeblazestudyapp.herokuapp.com','localhost']\n# Application definition",
         "detail": "studentstudyportal.settings",
         "documentation": {}
     },
@@ -505,7 +662,7 @@
         "kind": 5,
         "importPath": "studentstudyportal.settings",
         "description": "studentstudyportal.settings",
-        "peekOfCode": "SECRET_KEY = 'django-insecure-bku)a)g%0l^0^fv2x&wjcu#m_6*6z8&=8$2xz75)v1_i4h1dj8'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = ['codeblazestudyapp.herokuapp.com','localhost']\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
+        "peekOfCode": "SECRET_KEY = 'django-insecure-bku)a)g%0l^0^fv2x&wjcu#m_6*6z8&=8$2xz75)v1_i4h1dj8'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = False\nALLOWED_HOSTS = ['codeblazestudyapp.herokuapp.com','localhost']\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
         "detail": "studentstudyportal.settings",
         "documentation": {}
     },
@@ -514,7 +671,7 @@
         "kind": 5,
         "importPath": "studentstudyportal.settings",
         "description": "studentstudyportal.settings",
-        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = ['codeblazestudyapp.herokuapp.com','localhost']\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
+        "peekOfCode": "DEBUG = False\nALLOWED_HOSTS = ['codeblazestudyapp.herokuapp.com','localhost']\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
         "detail": "studentstudyportal.settings",
         "documentation": {}
     },
@@ -532,7 +689,16 @@
         "kind": 5,
         "importPath": "studentstudyportal.settings",
         "description": "studentstudyportal.settings",
-        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'dashboard',\n    'crispy_forms'\n]",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'dashboard',\n    'crispy_forms',\n    'custom_user'",
+        "detail": "studentstudyportal.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_USER_MODEL",
+        "kind": 5,
+        "importPath": "studentstudyportal.settings",
+        "description": "studentstudyportal.settings",
+        "peekOfCode": "AUTH_USER_MODEL = 'dashboard.CodeblazeStudyAppUser'\nMIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'whitenoise.middleware.WhiteNoiseMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',",
         "detail": "studentstudyportal.settings",
         "documentation": {}
     },
@@ -595,7 +761,7 @@
         "kind": 5,
         "importPath": "studentstudyportal.settings",
         "description": "studentstudyportal.settings",
-        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.0/howto/static-files/\nSTATIC_URL = 'static/'\nSTATIC_ROOT=os.path.join(BASE_DIR,'staticfiles')\nCRISPY_TEMPLATE_PACK=\"bootstrap4\"\n# Default primary key field type",
+        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.0/howto/static-files/\nSTATIC_URL = 'static/'\nSTATIC_ROOT=os.path.join(BASE_DIR,'staticfiles')\nCRISPY_TEMPLATE_PACK=\"bootstrap4\"\nLOGIN_REDIRECT_URL='index'",
         "detail": "studentstudyportal.settings",
         "documentation": {}
     },
@@ -604,7 +770,7 @@
         "kind": 5,
         "importPath": "studentstudyportal.settings",
         "description": "studentstudyportal.settings",
-        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.0/howto/static-files/\nSTATIC_URL = 'static/'\nSTATIC_ROOT=os.path.join(BASE_DIR,'staticfiles')\nCRISPY_TEMPLATE_PACK=\"bootstrap4\"\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.0/howto/static-files/\nSTATIC_URL = 'static/'\nSTATIC_ROOT=os.path.join(BASE_DIR,'staticfiles')\nCRISPY_TEMPLATE_PACK=\"bootstrap4\"\nLOGIN_REDIRECT_URL='index'\nLOGIN_URL='login'",
         "detail": "studentstudyportal.settings",
         "documentation": {}
     },
@@ -613,7 +779,7 @@
         "kind": 5,
         "importPath": "studentstudyportal.settings",
         "description": "studentstudyportal.settings",
-        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.0/howto/static-files/\nSTATIC_URL = 'static/'\nSTATIC_ROOT=os.path.join(BASE_DIR,'staticfiles')\nCRISPY_TEMPLATE_PACK=\"bootstrap4\"\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.0/howto/static-files/\nSTATIC_URL = 'static/'\nSTATIC_ROOT=os.path.join(BASE_DIR,'staticfiles')\nCRISPY_TEMPLATE_PACK=\"bootstrap4\"\nLOGIN_REDIRECT_URL='index'\nLOGIN_URL='login'\n# Default primary key field type",
         "detail": "studentstudyportal.settings",
         "documentation": {}
     },
@@ -622,7 +788,7 @@
         "kind": 5,
         "importPath": "studentstudyportal.settings",
         "description": "studentstudyportal.settings",
-        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.0/howto/static-files/\nSTATIC_URL = 'static/'\nSTATIC_ROOT=os.path.join(BASE_DIR,'staticfiles')\nCRISPY_TEMPLATE_PACK=\"bootstrap4\"\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.0/howto/static-files/\nSTATIC_URL = 'static/'\nSTATIC_ROOT=os.path.join(BASE_DIR,'staticfiles')\nCRISPY_TEMPLATE_PACK=\"bootstrap4\"\nLOGIN_REDIRECT_URL='index'\nLOGIN_URL='login'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field",
         "detail": "studentstudyportal.settings",
         "documentation": {}
     },
@@ -631,7 +797,7 @@
         "kind": 5,
         "importPath": "studentstudyportal.settings",
         "description": "studentstudyportal.settings",
-        "peekOfCode": "STATIC_URL = 'static/'\nSTATIC_ROOT=os.path.join(BASE_DIR,'staticfiles')\nCRISPY_TEMPLATE_PACK=\"bootstrap4\"\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "STATIC_URL = 'static/'\nSTATIC_ROOT=os.path.join(BASE_DIR,'staticfiles')\nCRISPY_TEMPLATE_PACK=\"bootstrap4\"\nLOGIN_REDIRECT_URL='index'\nLOGIN_URL='login'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
         "detail": "studentstudyportal.settings",
         "documentation": {}
     },
@@ -649,7 +815,7 @@
         "kind": 5,
         "importPath": "studentstudyportal.urls",
         "description": "studentstudyportal.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('',include('dashboard.urls'))\n]",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('',include('dashboard.urls')),\n    path('register/',dash_views.register,name='register'),\n    path('login/',auth_views.LoginView.as_view(template_name=\"dashboard/login.html\"),name='login'),\n    path('logout/',auth_views.LogoutView.as_view(template_name=\"dashboard/logout.html\"),name='logout'),\n    path('profile/',dash_views.profile,name='profile'),\n]",
         "detail": "studentstudyportal.urls",
         "documentation": {}
     },

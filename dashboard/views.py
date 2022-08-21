@@ -22,7 +22,7 @@ def notes(request):
         if form.is_valid():
             notes=Notes(user=request.user,title=request.POST['title'],description=request.POST['description'])
             notes.save()
-        messages.success(request,f"Notes Added from {request.user.username} Successfully!")
+        messages.success(request,f"Notes Added from {request.user.first_name} {request.user.last_name} Successfully!")
     form=NotesForm()
     notes=Notes.objects.filter(user=request.user)
     context={'notes':notes,'form':form}
@@ -51,7 +51,7 @@ def homework(request):
             homeworks=Homework(user=request.user,subject=request.POST['subject'],title=request.POST['title'],description=request.POST['description'],due=request.POST['due'],is_finished=finished)
 
             homeworks.save()
-            messages.success(request,f"Homework Added from {request.user.username}!!")
+            messages.success(request,f"Homework Added from {request.user.first_name} {request.user.last_name}!!")
     else:
 
         form=HomeworkForm()
@@ -130,7 +130,7 @@ def todo(request):
                 is_finished=finished
                 )
             todos.save()
-            messages.success(request,f"Todo Added from {request.user.username}!!")
+            messages.success(request,f"Todo Added from {request.user.first_name} {request.user.last_name}!!")
     else:
         form=TodoForm()
     todo=Todo.objects.filter(user=request.user)

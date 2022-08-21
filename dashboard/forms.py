@@ -53,6 +53,11 @@ class ConversionMassForm(forms.Form):
     )
 
 class UserRegistrationForm(UserCreationForm):
+    first_name=forms.CharField()
+    last_name=forms.CharField()
+    email=forms.EmailField(required=True)
     class Meta:
         model=User
-        fields=['username','password1','password2']
+        fields=['first_name','last_name','username','email','password1','password2']
+
+        
