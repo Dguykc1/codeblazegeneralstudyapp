@@ -81,7 +81,7 @@ def youtube(request):
     if request.method=="POST":
         form=DashboardForm(request.POST)
         text=request.POST['text']
-        video=VideosSearch(text,limit=20)
+        video=VideosSearch(text,limit=5)
         result_list=[]
         for i in video.result()['result']:
             result_dict={
@@ -172,7 +172,7 @@ def books(request):
         r=requests.get(url)
         answer=r.json()
         result_list=[]
-        for i in range(10):
+        for i in range(30):
             result_dict={
                 'title':answer['items'][i]['volumeInfo']['title'],
                 'subtitle':answer['items'][i]['volumeInfo'].get('subtitle'),
@@ -188,7 +188,8 @@ def books(request):
             context={
                'form':form,
                'results':result_list 
-            }  
+            } 
+        
         return render(request,'dashboard/books.html',context) 
     else:
         form=DashboardForm

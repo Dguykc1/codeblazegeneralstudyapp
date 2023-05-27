@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 from pathlib import Path
 import os
-
+import dj_database_url
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -81,18 +81,27 @@ WSGI_APPLICATION = 'studentstudyportal.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME':'d2m1bcvhpji35l',
-        'USER':'qccunzwbaqsneu',
-        'PASSWORD':'04e52f7ef263438e3bf16f9e1f7d0aaa3815d88da154ff521ef1769d8eb69234',
-        'HOST':'ec2-34-234-240-121.compute-1.amazonaws.com',
-        'PORT':'5432'
+    'default': dj_database_url.parse("postgres://kc:qQt31MNsC8BLwXVRV82SSJ0LFDVmh6ii@dpg-chokebik728ivvtld5m0-a.oregon-postgres.render.com/codeblazestudyappdb")
     }
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME':'d2m1bcvhpji35l',
+#         'USER':'qccunzwbaqsneu',
+#         'PASSWORD':'04e52f7ef263438e3bf16f9e1f7d0aaa3815d88da154ff521ef1769d8eb69234',
+#         'HOST':'ec2-34-234-240-121.compute-1.amazonaws.com',
+#         'PORT':'5432'
+#     }
     
-}
+# }
+
+# DATABASES = {
+#  'default': {
+#  'ENGINE': 'django.db.backends.sqlite3',
+#  'NAME': BASE_DIR / 'db.sqlite3',
+#  }
+# }
 
 
 
