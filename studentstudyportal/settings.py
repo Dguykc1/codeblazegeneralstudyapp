@@ -28,7 +28,7 @@ DEBUG = False
 
 
 
-ALLOWED_HOSTS = ['codeblazestudyapp.herokuapp.com','localhost']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
