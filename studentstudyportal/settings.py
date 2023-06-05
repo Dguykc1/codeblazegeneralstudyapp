@@ -82,7 +82,7 @@ WSGI_APPLICATION = 'studentstudyportal.wsgi.application'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
 DATABASES = {
-    'default': dj_database_url.parse("postgres://kc:qQt31MNsC8BLwXVRV82SSJ0LFDVmh6ii@dpg-chokebik728ivvtld5m0-a.oregon-postgres.render.com/codeblazestudyappdb")
+    'default': dj_database_url.parse("postgres://kc:UkAnriWa1nE4K9jvCqY3S9JqnzeTX563@dpg-cht0sbik728lhtg9oqlg-a.oregon-postgres.render.com/codeblazestudyappdb_yvcd")
     }
 # DATABASES = {
 #     'default': {
